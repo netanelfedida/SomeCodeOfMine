@@ -1,0 +1,16 @@
+Wstring:
+-בשביל להשתמש באותיות מעבר לטבלה האסקית 0-255 ניתן להשתמש ב-wstring:
+                          1.להגדיר בראש הקובץ: typedef basic_string<wchar_t>wstring;
+                             2.    wstring str = L"שלום!!";
+                           	setlocale(LC_ALL, "");
+	                      wcout << str << endl;
+
+fstream:
+-הספרייה מאפשרת לקרא ולכתוב מתוך קבצים שבמחשב:
+                          1. לקרא: ofstrem of(c://......);           of << 1234 << endl
+                2.לכתב: ifstream if(c://.....)    if >> variable >> endl
+
+sstringstream:
+-זה מאפשר לשמור לתוך בלוק בזיכרון:
+                        1.sstringstream ss;        ss >> 123456 >> s  
+              2. בכדי לקרא מהבלוק: ss.str();
