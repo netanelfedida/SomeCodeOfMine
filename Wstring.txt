@@ -14,3 +14,5 @@ sstringstream:
 -זה מאפשר לשמור לתוך בלוק בזיכרון:
                         1.sstringstream ss;        ss >> 123456 >> s  
               2. בכדי לקרא מהבלוק: ss.str();
+
+modification.................
